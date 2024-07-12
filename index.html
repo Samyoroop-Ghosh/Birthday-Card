@@ -14,7 +14,7 @@
 
         .container {
             width: 100vw;
-            height: 100vh;
+            height: 70vh;
             background-color: lightcoral;
             display: flex;
             align-items: center;
@@ -24,7 +24,7 @@
         }
 
         .container:hover {
-            transform: rotate(2deg) scale(1.1);
+            transform: perspective(2000px) rotate(2deg) scale(1.1);
         }
 
         .container:hover .front {
@@ -60,7 +60,8 @@
             position: absolute;
             transition: all 4s;
             left: 50%;
-            border-image: linear-gradient(to right, #f00745, #f0d53d, #8dec2d, #3465e2, #ec5e2a) 1;
+            box-shadow: inset 10px 10px 100px rgba(0,0,0,0.3), 10px 10px 100px rgba(0,0,0,0.3);
+            border-image: linear-gradient(to right, #fc4e4e, #89ef74, #8dec2d, #6373e7, #ec5e2a) 1;
         }
 
 
@@ -107,6 +108,8 @@
             border: 1vw double;
             border-radius: 1vw;
             opacity: 0.7;
+            box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2), 0 10px 100px  rgba(0,0,0,0.5);
+
         }
 
         .greetings {
@@ -159,7 +162,6 @@
             <p>Hope your day is filled with fun, laughter, and all the things that make you smile. Enjoy!</p>
             <footer>Yours Lovingly,<br>সাম্যཞơơ℘</footer>
             <img src="love.png">
-
         </div>
 
     </div>
