@@ -60,6 +60,7 @@
             position: absolute;
             transition: all 4s;
             left: 50%;
+            border-image: linear-gradient(to right, #f00745, #f0d53d, #8dec2d, #3465e2, #ec5e2a) 1;
         }
 
 
@@ -75,16 +76,20 @@
         }
 
         .front p {
-            font-size: 2vh;
+            font-size: 3vh;
             font-weight: bold;
             text-align: center;
-            font-family: 'Papyrus', fantasy;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             color: rgb(155, 0, 18);
+            position: absolute;
+            top: 2vh;
         }
 
         .front img {
             width: 33vw;
             height: 32vw;
+            position: absolute;
+            bottom: 0vh;
         }
 
         .rear {
@@ -100,26 +105,25 @@
             height: 40vw;
             rotate: 1deg;
             border: 1vw double;
-            border-radius: 0.5vw;
+            border-radius: 1vw;
             opacity: 0.7;
         }
 
         .greetings {
+            font-family: 'Lucida Handwriting', cursive;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
             text-align: center;
-            z-index: 0;            
+            z-index: 0;
             padding: 5vw;
             background-color: rgb(250, 224, 229);
 
         }
 
         .greetings p {
-            font-size: 2vw;
-            font-family: 'Lucida Handwriting', cursive;
-            /* Updated font-family */
+            font-size: 3vw;
             color: rgb(34, 26, 26);
         }
 
@@ -131,7 +135,6 @@
 
         .greetings footer {
             font-size: 1vw;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             color: rgb(15, 14, 14);
             position: absolute;
             bottom: 2vw;
@@ -149,7 +152,7 @@
         </div>
 
         <div class="rear">
-            <img src="pic.jpg">
+            <img src="pic.png">
         </div>
 
         <div class="greetings">
