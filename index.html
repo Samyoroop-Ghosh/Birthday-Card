@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: lightcoral;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            transition: all 4s;
+        }
+
+        .container:hover {
+            transform: rotate(2deg) scale(1.1);
+        }
+
+        .container:hover .front {
+            transform: rotateY(180deg);
+        }
+
+        .container:hover .rear {
+            animation: animerear 4s ease-in forwards;
+            transform: rotateY(180deg);
+        }
+
+        @keyframes animerear {
+
+            50% {
+                z-index: 2;
+            }
+
+            100% {
+                z-index: 2;
+            }
+
+        }
+
+
+
+        .front,
+        .greetings,
+        .rear {
+            width: 42vw;
+            height: 56vw;
+            border: 1vw ridge rgb(224, 179, 191);
+            border-radius: 1vw;
+            position: absolute;
+            transition: all 4s;
+            left: 50%;
+        }
+
+
+        .front {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            transform-origin: left;
+            backface-visibility: hidden;            
+            background-color: rgb(240, 224, 229);
+        }
+
+        .front p {
+            font-size: 3vh;
+            font-weight: bold;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(155, 0, 18);
+        }
+
+        .front img {
+            width: 21vw;
+            height: 28vw;
+        }
+
+        .rear {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform-origin: left;
+            background-color: rgb(245, 224, 229);
+        }
+
+        .rear img {
+            width: 30vw;
+            height: 40vw;
+            rotate: 3deg;
+            border: 1vw double;
+            border-radius: 0.5vw;
+            opacity: 0.7;
+        }
+
+        .greetings {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 0;
+            background-color: rgb(250, 224, 229);
+
+        }
+
+        .greetings p {
+            padding: 5vw;
+            text-align: center;
+            font-size: 2vw;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(15, 14, 14);
+        }
+
+        .greetings img {
+            width: 4vw;
+            height: 4vw;
+        }
+
+        .greetings footer {
+            text-align: center;
+            font-size: 1vw;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(15, 14, 14);
+            position: absolute;
+            bottom: 2vw;
+            right: 2vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="front">
+            <p>HAPPY BIRTHDAY</p>
+            <img src="cake.png">
+        </div>
+
+        <div class="rear">
+            <img src="pic.jpg">
+        </div>
+
+        <div class="greetings">
+            <p>WISHING YOU A VERY HAPPY BIRTHDAY WITH LOTS OF LOVE</p>
+            <footer>Yours Lovingly,<br>সাম্যཞơơ℘</footer>
+            <img src="love.png">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
