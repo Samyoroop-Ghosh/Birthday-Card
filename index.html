@@ -90,21 +90,27 @@
 
         .rear {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
             transform-origin: left;
             background-color: rgb(245, 224, 229);
         }
 
-        .rear img {
+        .rear .mainimg {
             width: 30vw;
             height: 40vw;
             rotate: 1deg;
             border: 1vw double;
             border-radius: 1vw;
             opacity: 0.7;
-            box-shadow: inset 10px 10px 100px rgba(0, 0, 0, 0.2);
+            box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.2);
+        }
 
+        .rear .stampimg {
+            width: 4vw;
+            height: 4vw;
+            rotate: 1deg;
         }
 
         .greetings {
@@ -125,14 +131,7 @@
 
         .greetings p {
             font-size: 3vw;
-            font-weight: bold;
             color: rgb(71, 68, 68);
-        }
-
-
-        .greetings img {
-            width: 4vw;
-            height: 4vw;
         }
 
         .greetings footer {
@@ -153,13 +152,13 @@
         </div>
 
         <div class="rear">
-            <img src="PankajPic.jpg">
+            <img class="mainimg" src="PankajPic.jpg">
+            <img class="stampimg" src="love.png">
         </div>
 
         <div class="greetings">
             <p>Hope your day is filled with fun, laughter, and all the things that make you smile. Enjoy!</p>
             <footer>Yours Lovingly,<br>Pankaj</footer>
-            <img src="love.png">
         </div>
     </div>
 </body>
