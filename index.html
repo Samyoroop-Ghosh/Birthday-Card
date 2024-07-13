@@ -15,11 +15,11 @@
         .container {
             width: 100vw;
             height: 90vh;
-            background-color: lightcoral;
+            background-image: url('https://png.pngtree.com/background/20210709/original/pngtree-decorative-background-for-colorful-balloon-birthday-party-picture-image_907108.jpg');
+            background-size: cover;
             display: flex;
             align-items: center;
-            justify-content: center;
-            position: absolute;
+            justify-items:center;
             transition: all 4s;
         }
 
@@ -32,7 +32,7 @@
         }
 
         .container:hover .rear {
-            animation: animerear 4s ease-in forwards;
+            animation: animerear 4s ease-in;
             transform: rotateY(180deg);
         }
 
@@ -55,13 +55,17 @@
         .rear {
             width: 42vw;
             height: 56vw;
+            margin-top: 0vh;
             border: 1vw ridge rgb(224, 179, 191);
             border-radius: 1vw;
             position: absolute;
             transition: all 4s;
             left: 50%;
-            box-shadow: inset 10px 10px 100px rgba(0, 0, 0, 0.3), 10px 10px 100px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 10px 10px 50px rgba(0, 0, 0, 0.3), 10px 10px 100px rgba(0, 0, 0, 0.3);
             border-image: linear-gradient(to right, #fc4e4e, #89ef74, #8dec2d, #6373e7, #ec5e2a) 1;
+            background-image: url('https://images.pexels.com/photos/4197558/pexels-photo-4197558.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-size: cover;
+            background-position: -4vw 5vh;
         }
 
 
@@ -79,9 +83,10 @@
         .front p {
             font-size: 3vh;
             font-weight: bold;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif sans-serif;  
+            font-variant: small-caps;
             text-align: center;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: rgb(155, 0, 18);
+            color: rgb(214, 16, 39);
             position: absolute;
             top: 2vh;
         }
@@ -108,7 +113,7 @@
             border: 1vw double;
             border-radius: 1vw;
             opacity: 0.7;
-            box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2), 0 10px 100px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 10px 10px 100px rgba(0, 0, 0, 0.2);
 
         }
 
@@ -150,7 +155,7 @@
     <div class="container">
 
         <div class="front">
-            <p>HAPPY BIRTHDAY</p>
+            <p>Happy Birthday</p>
             <img src="cake.png">
         </div>
 
@@ -163,7 +168,6 @@
             <footer>Yours Lovingly,<br>Pankaj</footer>
             <img src="love.png">
         </div>
-
     </div>
 </body>
 
